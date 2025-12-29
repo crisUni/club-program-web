@@ -1,8 +1,24 @@
+:root {
+  --main-bg-color: #E0FEFF;
+  --navbar-bg-color: #1A598C;
+  --navbar-inactive-color: #92DDF2;
+  --navbar-active-color: #E0FEFF;
+  --text-inactive-color: #383838;
+  --text-active-color: #000000;
+}
+
 body{
   margin: 0;
   padding: 0;
+  background-color: var(--main-bg-color);
 }
 
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+
+/*  FLEX UTILS  */
 .flex-row{
   display: flex;
   flex-direction: row;
@@ -11,4 +27,70 @@ body{
 .flex-col{
   display: flex;
   flex-direction: col;
+}
+
+.width-100{
+  width: 100%;
+}
+
+.height-100{
+  height: 100%;
+}
+
+
+.navbar{
+  background-color: var(--navbar-bg-color);
+  height: 5rem;
+}
+
+.navbar-buttons{
+  justify-content: space-between;
+}
+
+.navbar-element{
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-grow: 1;
+
+  margin: 0px 4px;
+}
+
+.navbar-x{
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-active{
+  background-color: var(--navbar-active-color);
+  color: var(--text-active-color);
+}
+
+.navbar-inactive{
+  background-color: var(--navbar-inactive-color);
+  color: var(--text-inactive-color);
+}
+
+
+.home-container{
+  margin: 2rem;
+}
+
+.home-content{
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+}
+
+.social-media-buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-buttons > div{
+  margin: 0px 10px;
 }
