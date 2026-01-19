@@ -38,20 +38,6 @@ const calendarDaysGrid = document.getElementById("calendar-days-grid")
 const calendarLeftButton = document.getElementById("calendar-left-button")
 const calendarRightButton = document.getElementById("calendar-right-button")
 
-calendarLeftButton.addEventListener("click", (e) => {
-	if (e.button !== 0) return
-	currentDate.addMonth(-1)
-	currentDate.setDate(1)
-	RebuildCalendar()
-})
-
-calendarRightButton.addEventListener("click", (e) => {
-	if (e.button !== 0) return
-	currentDate.addMonth(1)
-	currentDate.setDate(1)
-	RebuildCalendar()
-})
-
 function OnWindowLoad() {
 	RebuildCalendar()
 }
@@ -91,7 +77,13 @@ function RebuildCalendar() {
 	}
 }
 
+function UpdateMonth(n) {
+	currentDate.addMonth(n)
+	currentDate.setDate(1)
+	RebuildCalendar()
+}
+
 // Setup
-window.addEventListener("load", () => {
-	OnWindowLoad()
-})
+calendarLeftButton.addEventListener("click", (_) => UpdateMonth(-1))
+calendarRightButton.addEventListener("click", (_) => UpdateMonth(1))
+window.addEventListener("load", OnWindowLoad)
