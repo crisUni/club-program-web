@@ -188,6 +188,10 @@ a.navbar-element-inactive {
 	border-radius: 10px;
 }
 
+.calendar-date-offmonth {
+	color: gray;
+}
+
 .grid-fill > * {
 	overflow: auto;
 	padding: 0.5rem;

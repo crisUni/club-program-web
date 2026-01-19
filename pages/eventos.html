@@ -1,7 +1,6 @@
 <!doctype html>
 <head>
 	<link rel="stylesheet" href="../styles/eventos_styles.css">
-	<script src="../scripts/calendar.js"></script>
 </head>
 
 <body>
@@ -27,10 +26,12 @@
 		<div class="calendar flex-vertical">
 			<div class="calendar-title flex-horizontal">
 				<img class="ensure-square calendar-arrow" alt="<">
-				<div class="flex-grow calendar-title">CURRENT_MONTH</div>
+				<div id="current-month-div" class="flex-grow calendar-title">
+					CURRENT_MONTH
+				</div>
 				<img class="ensure-square calendar-arrow" alt=">">
 			</div>
-			<div class="calendar-content calendar-dates">
+			<div id="calendar-days-grid" class="calendar-content calendar-dates">
 				<div class="calendar-weekday">Monday</div>
 				<div class="calendar-weekday">Tuesday</div>
 				<div class="calendar-weekday">Wednesday</div>
@@ -88,3 +89,4 @@
 		<div class="events"></div>
 	</div>
 </body>
+<script type="module" src="../scripts/calendar.js"></script>
