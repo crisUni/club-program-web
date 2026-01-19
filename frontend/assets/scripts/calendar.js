@@ -92,4 +92,6 @@ function RebuildCalendar() {
 }
 
 // Setup
-window.onload = () => OnWindowLoad()
+window.addEventListener("load", () => {
+	OnWindowLoad()
+})
