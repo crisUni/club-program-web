@@ -1,0 +1,92 @@
+<!doctype html>
+<head>
+	<link rel="stylesheet" href="/frontend/assets/styles/eventos_styles.css">
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="flex-horizontal height-100">
+			<img class="ensure-square navbar-element-inactive" alt="IMAGE">
+			<div class="flex-horizontal flex-grow equal-flex" />
+			<a class="navbar-element-inactive" href="../pages/landing.html">Home</a>
+			<a class="navbar-element-inactive" href="../pages/actividades.html">
+				Actividades
+			</a>
+			<a class="navbar-element-active" href="../pages/eventos.html">Eventos</a>
+			<a class="navbar-element-inactive" href="../pages/galeria.html">
+				Galeria
+			</a>
+			<a class="navbar-element-inactive" href="../pages/unete.html">Unete</a>
+		</div>
+		<div class="ensure-square navbar-element-other">X</div>
+	</nav>
+
+	<div class="screen-wrapper flex-horizontal equal-flex">
+		<!-- Calendar -->
+		<div class="calendar flex-vertical">
+			<div class="calendar-title flex-horizontal">
+				<img id="calendar-left-button" class="ensure-square calendar-arrow" alt="<">
+				<div id="current-month-div" class="flex-grow calendar-title">
+					CURRENT_MONTH
+				</div>
+				<img id="calendar-right-button" class="ensure-square calendar-arrow" alt=">">
+			</div>
+			<div id="calendar-days-grid" class="calendar-content calendar-dates">
+				<div class="calendar-weekday">Monday</div>
+				<div class="calendar-weekday">Tuesday</div>
+				<div class="calendar-weekday">Wednesday</div>
+				<div class="calendar-weekday">Thursday</div>
+				<div class="calendar-weekday">Friday</div>
+				<div class="calendar-weekday">Saturday</div>
+				<div class="calendar-weekday">Sunday</div>
+
+				<div class="calendar-date">1</div>
+				<div class="calendar-date">2</div>
+				<div class="calendar-date">3</div>
+				<div class="calendar-date">4</div>
+				<div class="calendar-date">5</div>
+				<div class="calendar-date">6</div>
+				<div class="calendar-date">7</div>
+				<div class="calendar-date">8</div>
+				<div class="calendar-date">9</div>
+				<div class="calendar-date">10</div>
+				<div class="calendar-date">11</div>
+				<div class="calendar-date">12</div>
+				<div class="calendar-date">13</div>
+				<div class="calendar-date">14</div>
+				<div class="calendar-date">15</div>
+				<div class="calendar-date">16</div>
+				<div class="calendar-date">17</div>
+				<div class="calendar-date">18</div>
+				<div class="calendar-date">19</div>
+				<div class="calendar-date">20</div>
+				<div class="calendar-date">21</div>
+				<div class="calendar-date">22</div>
+				<div class="calendar-date">23</div>
+				<div class="calendar-date">24</div>
+				<div class="calendar-date">25</div>
+				<div class="calendar-date">26</div>
+				<div class="calendar-date">27</div>
+				<div class="calendar-date">28</div>
+				<div class="calendar-date">29</div>
+				<div class="calendar-date">30</div>
+				<div class="calendar-date">31</div>
+				<div class="calendar-date">32</div>
+				<div class="calendar-date">33</div>
+				<div class="calendar-date">34</div>
+				<div class="calendar-date">35</div>
+				<div class="calendar-date">36</div>
+				<div class="calendar-date">37</div>
+				<div class="calendar-date">38</div>
+				<div class="calendar-date">39</div>
+				<div class="calendar-date">40</div>
+				<div class="calendar-date">41</div>
+				<div class="calendar-date">42</div>
+			</div>
+		</div>
+
+		<!-- Events -->
+		<div class="events"></div>
+	</div>
+</body>
+<script type="module" src="/frontend/assets/scripts/calendar.js"></script>

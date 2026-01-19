@@ -1,0 +1,71 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.3.11/schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"files": {
+		"ignoreUnknown": false
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab"
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"style": {
+				"useNamingConvention": {
+					"level": "warn",
+					"options": {
+						"strictCase": true,
+						"requireAscii": false,
+						"conventions": [
+							{
+								"selector": { "kind": "function" },
+								"formats": ["PascalCase"]
+							},
+							{
+								"selector": { "kind": "variable" },
+								"formats": ["camelCase"]
+							},
+							{
+								"selector": { "kind": "const" },
+								"formats": ["camelCase"]
+							},
+							{
+								"selector": { "kind": "let" },
+								"formats": ["camelCase"]
+							},
+							{
+								"selector": { "kind": "classProperty" },
+								"formats": ["camelCase"]
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "double",
+			"semicolons": "asNeeded"
+		}
+	},
+	"assist": {
+		"enabled": true,
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
+		}
+	},
+	"html": {
+		"experimentalFullSupportEnabled": true,
+		"formatter": {
+			"enabled": true
+		}
+	}
+}
